@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+    text-decoration: none;
+    color: white;
+    cursor: default;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+
+#cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #95C11E;
+    position: fixed;
+    z-index: 99;
+    
+}
+#cursorShadow{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #c7fe2f80;
+    filter: blur(100px);
+    position: fixed;
+    z-index: 9;
+
+}
+
+#nav{
+    height: 145px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    align-items: center;
+    padding: 0 8vw;
+    position: fixed;
+    z-index: 999;
+
+}
+
+#nav img{
+    height: 74px;
+    width: 98px;
+}
+
+#nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+
+}
+
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#page1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+#page1 h1{
+    font-size: 9vw;
+    font-weight: 900;
+    position: relative;
+}
+
+#page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    top: -0.4vw;
+    left: -0.4vw;
+    color: black;
+    z-index: -1;
+    -webkit-text-stroke: 1px #95C11E;
+}
+
+
+#page1 h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 10px 0 20px 0;
+}
+
+#page1 p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    width: 40%;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    
+}
+
+marquee{
+    position: relative;
+    z-index: 10;
+}
+ 
+marquee h4{
+    display: inline;
+    font-size: 9vw;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: 1.5px #ffffff;
+
+    
+}
+
+marquee h4:hover{
+    color: #95c11e;
+    -webkit-text-stroke: 2px #95c11e;
+}
