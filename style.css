@@ -141,3 +141,13 @@ marquee h4:hover{
     color: #95c11e;
     -webkit-text-stroke: 2px #95c11e;
 }
+
+
+#credit{
+    font-weight: bolder;
+    height: 60px;
+    background: linear-gradient(to left, black, white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
